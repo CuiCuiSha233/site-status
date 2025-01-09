@@ -14,7 +14,7 @@ const siteConfig = {
   siteIcp: process.env.SITE_ICP || "萌ICP备20222868号-3",
   countDays: Number(process.env.COUNT_DAYS || 60),
   showLink: process.env.SHOW_LINK === "true" || true,
-  platform: process.env.DEPLOYMENT_PLATFORM || "cloudflare",
+  platform: process.env.DEPLOYMENT_PLATFORM || "auto",
   version: pkg.version,
 };
 
@@ -89,7 +89,7 @@ export default defineNuxtConfig({
   css: ["~/style/main.scss", "~/style/animate.scss"],
   // env
   runtimeConfig: {
-    apiUrl: process.env.API_URL || "https://api.uptimerobot.com/v2/",
+    apiUrl: process.env.API_URL || "https://api.uptimerobot.com/v2/getMonitors",
     apiKey: process.env.API_KEY,
     sitePassword: process.env.SITE_PASSWORD,
     siteSecretKey: process.env.SITE_SECRE_KEY || "site-status",
