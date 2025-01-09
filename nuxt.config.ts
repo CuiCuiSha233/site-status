@@ -14,7 +14,7 @@ const siteConfig = {
   siteIcp: process.env.SITE_ICP || "萌ICP备20222868号-3",
   countDays: Number(process.env.COUNT_DAYS || 60),
   showLink: process.env.SHOW_LINK === "true" || true,
-  platform: process.env.DEPLOYMENT_PLATFORM || "auto",
+  platform: process.env.DEPLOYMENT_PLATFORM || "cloudflare",
   version: pkg.version,
 };
 
