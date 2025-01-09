@@ -90,7 +90,7 @@ export default defineNuxtConfig({
   // env
   runtimeConfig: {
     apiUrl: process.env.API_URL || "https://api.uptimerobot.com/v2/getMonitors?",
-    apiKey: process.env.API_KEY,
+    apiKey: process.env.API_KEY || "ur1884674-11dfb1e726368ce9a232256f",
     sitePassword: process.env.SITE_PASSWORD,
     siteSecretKey: process.env.SITE_SECRE_KEY || "site-status",
     public: siteConfig,
